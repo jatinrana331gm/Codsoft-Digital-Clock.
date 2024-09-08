@@ -1,7 +1,7 @@
 # Codsoft-Digital-Clock.
 # Virtual Internship Programme at CodSoft
 
-## ✨TASK 03: Digital Clock🕝
+## ✨TASK 01: Digital Clock🕝
 * ### **Description:
 Develop a digital clock that displays the current time and updates in real-time.
 Features: Display hours, minutes, and seconds. Real-time updates.
