@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #10101E; 
+}
+
+.clock-container {
+  color: #fff;
+  background: #10101E;
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #2E94E3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.clock-container:hover {
+  background: red;
+  box-shadow: 0 0 30px red;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.date .day {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.date .full-date {
+  font-size: 18px;
+}
+
+.clock {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.clock span:last-child {
+  background: #2E94E3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+
+@media (max-width: 600px) {
+  .clock-container {
+      padding: 15px;
+      width: 90%;
+  }
+
+  .date {
+      font-size: 18px;
+  }
+
+  .clock {
+      font-size: 36px;
+  }
+
+  .clock span {
+      min-width: 40px;
+  }
+}
